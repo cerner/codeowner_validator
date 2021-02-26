@@ -1,0 +1,4 @@
+file1.yml @org/team
+# duplicated pattern for file2.yml
+file2.yml @org/team
+file2.yml @org/team2

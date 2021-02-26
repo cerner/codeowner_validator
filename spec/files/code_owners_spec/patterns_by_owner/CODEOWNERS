@@ -1,0 +1,7 @@
+file1.yml @org/team1
+file2.yml @org/team1
+
+file3.yml @org/team2
+file4.yml @org/team2
+
+file5.yml @org/team3

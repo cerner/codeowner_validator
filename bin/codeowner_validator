@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+$LOAD_PATH.unshift(File.join(File.basename(__FILE__), '..', 'lib'))
+
+require 'codeowner_validator'
+
+CodeownerValidator::CLI.start(ARGV)

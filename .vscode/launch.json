@@ -1,0 +1,53 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "env": {
+          "RUBY_VERSION": "ruby-2.6.6",
+          "GEM_HOME": "${env:HOME}/.rvm/gems/ruby-2.6.6",
+          "GEM_PATH": "${env:HOME}/.rvm/gems/ruby-2.6.6:${env:HOME}/.rvm/gems/ruby-2.6.6@global",
+          "PATH": "${env:HOME}/.rvm/gems/ruby-2.6.6/bin:${env:HOME}/.rvm/gems/ruby-2.6.6@global/bin:${env:HOME}/.rvm/rubies/ruby-2.6.6/bin:${env:HOME}/.rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+      }
+    },
+    {
+      "name": "RSpec - all",
+      "type": "Ruby",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+      "program": "${workspaceRoot}/bin/rspec",
+      "args": [
+        "--pattern",
+        "${workspaceRoot}/spec/**/*_spec.rb"
+      ]
+    },
+    {
+      "name": "RSpec - active spec file only",
+      "type": "Ruby",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+      "program": "${workspaceRoot}/bin/rspec",
+      "args": [
+          "-I",
+          "${workspaceRoot}",
+          "${file}"
+      ]
+    },
+    {
+      "name": "Debug RSpec - open spec file",
+      "type": "Ruby",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+      "useBundler": true,
+      "pathToBundler": "${env:HOME}/.rvm/rubies/ruby-2.6.6/bin/bundler",
+      "pathToRDebugIDE": "${env:HOME}/.rvm/gems/ruby-2.6.6@codeowner_validator/gems/ruby-debug-ide-0.7.2",
+      "debuggerPort": "1235",
+      "program": "${workspaceRoot}/bin/rspec",
+      "args": [
+          "${file}"
+      ]
+    }
+  ]
+}

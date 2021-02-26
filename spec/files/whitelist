@@ -1,0 +1,6 @@
+!**/important.txt
+whitelist/**
+!blacklist/**
+
+# remove only one file from the whitelist section
+!whitelist/bar.rb
