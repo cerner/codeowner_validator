@@ -1,18 +1,9 @@
 ---
-name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
-assignees: ''
-
----
-
----
 name: "\U0001F680 New Feature Request"
 about: Propose a new feature
 title: ''
 labels: feature
-assignees:
+assignees: ''
 
 ---
 
