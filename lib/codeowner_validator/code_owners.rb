@@ -235,6 +235,14 @@ module CodeownerValidator
       raise "Unable to locate a code owners file located [#{codeowner_file_paths.join(',')}]"
     end
 
+    # Public: Returns <true> if the provided file is deemed whitelisted per the configuration;
+    # otherwise, <false>
+    #
+    # @return [true|false] if the provided file is deemed whitelisted per the configuration
+    def whitelisted?(file)
+      whitelist.whitelisted?(file)
+    end
+
     private
 
     # returns the git object representation of the repo provided
