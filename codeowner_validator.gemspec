@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.description = <<~DESC
     GitHub CODEOWNERS validator
   DESC
-  spec.homepage      = 'http://foo.com'
+  spec.homepage      = 'https://github.com/cerner/codeowner_validator'
   spec.license       = 'Apache-2.0'
 
   # Specify which files should be added to the gem when it is released.
