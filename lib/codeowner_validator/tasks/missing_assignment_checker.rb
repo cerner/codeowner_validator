@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'codeowner_validator/common/tasks/base'
+require 'codeowner_validator/group/comment'
 
 module CodeownerValidator
   module Tasks
