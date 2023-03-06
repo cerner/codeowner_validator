@@ -79,10 +79,8 @@ module CodeownerValidator
         @whitelist_file_paths = %w[CODEOWNERS_WHITELIST .github/CODEOWNERS_WHITELIST]
 
         # allow customization of the locations to search for the file
-        if ENV['CODEOWNER_WHITELIST_FILE_PATHS']
-          ENV['CODEOWNER_WHITELIST_FILE_PATHS']&.split(',')&.each(&:strip!)&.each do |str|
-            @whitelist_file_paths << str
-          end
+        ENV['CODEOWNER_WHITELIST_FILE_PATHS']&.split(',')&.each(&:strip!)&.each do |str|
+          @whitelist_file_paths << str
         end
 
         @whitelist_file_paths

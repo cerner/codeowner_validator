@@ -262,10 +262,8 @@ module CodeownerValidator
       @codeowner_file_paths = %w[CODEOWNERS docs/CODEOWNERS .github/CODEOWNERS]
 
       # allow customization of the locations to search for the file
-      if ENV['CODEOWNER_FILE_PATHS']
-        ENV['CODEOWNER_FILE_PATHS']&.split(',')&.each(&:strip!)&.each do |str|
-          @codeowner_file_paths << str
-        end
+      ENV['CODEOWNER_FILE_PATHS']&.split(',')&.each(&:strip!)&.each do |str|
+        @codeowner_file_paths << str
       end
 
       @codeowner_file_paths
