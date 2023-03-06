@@ -30,7 +30,7 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = '>= 2.6.2'
 
   spec.add_dependency 'rainbow', '>= 2.0', '< 4.0.0'
-  spec.add_dependency 'thor', '~> 0.19'
+  spec.add_dependency 'thor', '>= 0.19'
 
   spec.add_dependency 'tty-prompt', '~> 0.12'
   spec.add_dependency 'tty-spinner', '~> 0.4'
