@@ -12,7 +12,7 @@ module CodeownerValidator
         class << self
           # @see CodeownerValidator::Group::Comment.match?
           def match?(type)
-            Comment::TYPE_VERBOSE == type
+            type == Comment::TYPE_VERBOSE
           end
         end
       end
