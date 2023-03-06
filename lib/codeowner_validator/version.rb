@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module CodeownerValidator
-  VERSION = '0.2.0'
+  VERSION = '0.3.0'
 
   # version module
   module Version
