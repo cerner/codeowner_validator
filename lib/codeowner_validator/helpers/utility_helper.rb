@@ -13,16 +13,21 @@ module CodeownerValidator
     def in_folder(folder)
       raise "The folder location '#{folder}' does not exists" unless File.directory?(folder)
 
-      if defined?(Bundler)
-        Bundler.with_clean_env do
-          Dir.chdir folder do
-            yield
-          end
-        end
-      else
+      with_clean_env do
         Dir.chdir folder do
           yield
         end
+      end
+    end
+
+    def with_clean_env
+      return yield unless defined?(Bundler)
+
+      if Bundler.respond_to?(:with_unbundled_env)
+        Bundler.with_unbundled_env { yield }
+      else
+        # Deprecated on Bundler 2.1
+        Bundler.with_clean_env { yield }
       end
     end
   end
