@@ -9,3 +9,6 @@
 
 # 0.3.0
 - Update to support ruby 3.2 ([#9](https://github.com/cerner/codeowner_validator/pull/9))
+
+# 0.3.1
+- Back version of ruby to be in RVM supported set ([#10](https://github.com/cerner/codeowner_validator/pull/10))
