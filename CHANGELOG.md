@@ -6,3 +6,6 @@
 
 # 0.2.0
 - Update version of thor to have a broader availability ([#6](https://github.com/cerner/codeowner_validator/pull/6))
+
+# 0.3.0
+- Update to support ruby 3.2 ([#9](https://github.com/cerner/codeowner_validator/pull/9))
