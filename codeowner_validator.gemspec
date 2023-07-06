@@ -27,7 +27,10 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(/^bin\//) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.required_ruby_version = '>= 2.6.2'
+  # rubocop:disable Gemspec/RequiredRubyVersion
+  # The intent is for supportability from ruby 2.7 and greater
+  spec.required_ruby_version = '>= 2.7.6'
+  # rubocop:enable Gemspec/RequiredRubyVersion
 
   spec.add_dependency 'rainbow', '>= 2.0', '< 4.0.0'
   spec.add_dependency 'thor', '>= 0.19'
