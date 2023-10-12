@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
 require 'thor'
-# pull in monkeypatch for codeowners-checker
-require_relative 'codeowners/checker/group/line'
 Dir.glob(File.join(File.dirname(__FILE__), 'codeowner_validator', '**/*.rb'), &method(:require))
 
 # Public: The code owner validator space is utilized for validations against

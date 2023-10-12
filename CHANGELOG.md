@@ -12,3 +12,6 @@
 
 # 0.3.1
 - Back version of ruby to be in RVM supported set ([#10](https://github.com/cerner/codeowner_validator/pull/10))
+
+# 4.0.0
+- Remove usage of codeowner-checker from project and pulled in required classes
