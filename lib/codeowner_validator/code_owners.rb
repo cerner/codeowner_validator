@@ -3,8 +3,9 @@
 require 'pathname'
 require_relative 'helpers/utility_helper'
 require 'codeowner_validator/lists/whitelist'
-require 'codeowners/checker/group'
-require_relative '../codeowners/checker/group/line'
+# require 'codeowners/checker/group'
+require_relative '../codeowners/checker/group'
+# require_relative '../codeowners/checker/group/line'
 
 # rubocop:disable Style/ImplicitRuntimeError
 module CodeownerValidator
