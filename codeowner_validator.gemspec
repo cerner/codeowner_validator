@@ -40,5 +40,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'tty-table', '~> 0.8'
 
   spec.add_dependency 'git', '~> 1.0'
-  spec.add_dependency 'pathspec', '~> 0.2.0'
+  spec.add_dependency 'pathspec', '>= 0.2'
 end
