@@ -13,9 +13,6 @@ module Codeowners
         @lines = lines
       end
 
-      # rubocop:disable Metrics/AbcSize
-      # rubocop:disable Metrics/CyclomaticComplexity
-      # rubocop:disable Metrics/MethodLength
       def call
         lines.each_with_index do |line, index|
           case line
@@ -43,7 +40,7 @@ module Codeowners
           when Codeowners::Checker::Group::UnrecognizedLine
             ensure_groups_structure
           else
-            raise "Do not know how to handle line: #{line.inspect}"
+            raise StandardError, "Do not know how to handle line: #{line.inspect}"
           end
           current_group.add(line)
         end

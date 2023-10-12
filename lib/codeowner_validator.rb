@@ -2,6 +2,7 @@
 
 require 'thor'
 Dir.glob(File.join(File.dirname(__FILE__), 'codeowner_validator', '**/*.rb'), &method(:require))
+Dir.glob(File.join(File.dirname(__FILE__), 'codeowners', '**/*.rb'), &method(:require))
 
 # Public: The code owner validator space is utilized for validations against
 # the code owner file for a given repository.

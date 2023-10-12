@@ -44,8 +44,6 @@ module Codeowners
 
       # Returns an array of strings representing the structure of the group.
       # It indent internal subgroups for readability and debugging purposes.
-      # rubocop:disable Metrics/MethodLength
-      # rubocop:disable Metrics/AbcSize
       def to_tree(indentation = '')
         @list.each_with_index.flat_map do |item, index|
           if indentation.empty?
