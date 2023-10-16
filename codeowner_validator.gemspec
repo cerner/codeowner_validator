@@ -33,12 +33,12 @@ Gem::Specification.new do |spec|
   # rubocop:enable Gemspec/RequiredRubyVersion
 
   spec.add_dependency 'rainbow', '>= 2.0', '< 4.0.0'
-  spec.add_dependency 'thor', '>= 0.19'
+  spec.add_dependency 'thor', '>= 1.0'
 
   spec.add_dependency 'tty-prompt', '~> 0.12'
   spec.add_dependency 'tty-spinner', '~> 0.4'
   spec.add_dependency 'tty-table', '~> 0.8'
 
-  spec.add_dependency 'codeowners-checker', '~> 1.1'
   spec.add_dependency 'git', '~> 1.0'
+  spec.add_dependency 'pathspec', '>= 0.2'
 end
